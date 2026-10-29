@@ -62,6 +62,17 @@ a.copy:focus-visible { outline:3px solid var(--fg); outline-offset:2px }
   <h1>Older updates</h1>
   <p class="note"><b>Old steps below.</b> Many of these entries say "paste the new code". That is no longer needed: update the dashboard from <b>Settings › Updates</b>, and the Google scripts update themselves. This page is a record of what changed and when.</p>
   <article class="entry">
+    <h2>Version 7.17: more bank messages understood (29 Oct)</h2>
+    <ul class="small">
+    <li><b>Bank of India UPI payments</b> (the ones that say "debited A/c ... and credited to ... via UPI") are now read: amount, who you paid and the date. "Mr." is dropped from the name.</li>
+    <li><b>Axis credit card</b> messages in the "Spent INR ... using Axis Bank Credit Card ... at SHOP" wording, and <b>Axis account</b> messages where the shop comes before the date, now show the shop.</li>
+    <li><b>HDFC UPI mandates</b> ("Sent Rs. ... To SHOP") are logged as auto-debits, so subscriptions such as Apple are found. "Book My Sho" is filed under Entertainment.</li>
+    <li>The amount is never taken from "Avl bal" or "Avl limit". Your name now also matches with a title, initials, a swapped order, or several spellings separated by a semicolon, so money moved between your own accounts stays out of your spending.</li>
+    <li>Nothing to change in your Google script: this update is in the app only.</li>
+    </ul>
+  </section>
+
+<section data-v="7.16" data-date="17 Oct">
     <h2>Version 7.16: fewer wrong guesses (17 Oct)</h2>
     <ul class="small">
     <li><b>Insurance brokers:</b> a payment to Policybazaar or a similar broker used to be pre-picked as Health, even when it was a term plan. It now starts as Bills & Utilities, like LIC. Pick another category once and the app remembers it. Direct health insurers such as Star Health stay as Health.</li>
